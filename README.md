@@ -5,7 +5,7 @@ Golang Resources
 
 # Books
 1. Introducing Go - William Doxsey - O'Reilly Publications
-2. Go in Action - William Kennedy - Manning Publ. 
+2. Go in Action - William Kennedy - Manning Publications 
 
 # Challenges
 1. https://gophercises.com/
