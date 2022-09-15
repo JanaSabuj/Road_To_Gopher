@@ -15,4 +15,14 @@ func main() {
 	dogsName := "Whiskers"
 	fmt.Println("My dog's name is", dogsName)
 
+	// constants
+	const greet string = "Hello World"
+	fmt.Println(greet)
+
+	var (
+		a = 5
+		b = 10
+		c = 13
+	)
+	fmt.Println(a, b, c)
 }
