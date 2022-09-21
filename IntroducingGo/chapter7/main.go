@@ -10,14 +10,17 @@ type Circle struct {
 	x, y, r float64
 }
 
-func circleArea(c *Circle) float64 {
-	return math.Pi * c.r * c.r
-}
-
 // method of a struct
 func (c *Circle) area() float64 {
 	return math.Pi * c.r * c.r
 }
+
+func circleArea(c *Circle) float64 {
+	return math.Pi * c.r * c.r
+}
+
+// interface
+
 
 func main() {
 	c1 := Circle{x: 10, y: 20, r: 30}
