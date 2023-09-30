@@ -1,4 +1,4 @@
-package main
+package concepts
 
 import (
 	"fmt"
@@ -31,7 +31,7 @@ func (book *Book) saveBook() {
 // 	book.savedAt = time.Now()
 // }
 
-func main() {
+func book() {
 	b := Book{
 		title: "Harry Potter",
 		author: "J K Rowling",
