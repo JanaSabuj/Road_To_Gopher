@@ -8,6 +8,7 @@ import (
 type Book struct {
 	title string
 	author string
+	price float32
 
 	isSaved bool
 	savedAt time.Time
