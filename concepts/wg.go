@@ -5,31 +5,36 @@ import (
 	"sync"
 )
 
+type Pod struct {
+	Name string
+	UUID string
+}
+
 func Wg_example() {
-	// WaitGroup is a synchronization primitive that lets you
 	fmt.Println("Hello, 世界")
-	// done := make(chan bool)
-	values := []string{"a", "b", "c"}
+
+	// slice of Pods
+	pods := []Pod{
+		{Name: "Pod 1", UUID: "uuid1"},
+		{Name: "Pod 2", UUID: "uuid2"},
+		{Name: "Pod 3", UUID: "uuid3"},
+	}
+	fmt.Println(pods)
 
 	var wg sync.WaitGroup
-	for _, v := range values {
-		fmt.Println(v, &v) // same instance of the v variable is used, hence the same address is printed
-
+	for _, p := range pods {
+		// 	fmt.Println(v, &v) // same instance of the v variable is used, hence the same address is printed
 		wg.Add(1)
-		v := v
+		p := p
 		go func() {
 			defer wg.Done()
-			fmt.Println(v)
+			fmt.Printf("Pod %v is deleted\n", p.Name)
 			// done <- true
 		}()
-		// }(v)
 	}
 
-	// wait for all goroutines to complete before exiting
-	// for _ = range values {
-	// 	<-done
-	// }
-	wg.Wait()
+	wg.Wait() // wait till all Pods are deleted
+	fmt.Println("All pods have been deleted")
 }
 
 /* output
