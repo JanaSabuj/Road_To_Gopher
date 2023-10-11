@@ -13,3 +13,11 @@ Golang Resources
 
 ### replit editor
 > replit-git-editor .git/config
+
+### Blogs
+- https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go
+- https://research.swtch.com/interfaces
+- https://go.dev/doc/faq#convert_slice_of_interface
+- https://perennialsky.medium.com/memory-allocation-for-a-struct-in-golang-b5057b8ccf23
+- https://en.wikipedia.org/wiki/Robustness_principle
+- 
