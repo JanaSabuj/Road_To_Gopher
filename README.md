@@ -10,3 +10,6 @@ Golang Resources
 # Challenges
 1. https://gophercises.com/
 2. https://exercism.org/
+
+### replit editor
+> replit-git-editor .git/config
