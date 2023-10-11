@@ -10,6 +10,7 @@ type Pod struct {
 	UUID string
 }
 
+// Pattern: Deleting an array of k8s pods concurrently
 func Wg_example() {
 	fmt.Println("Hello, 世界")
 
