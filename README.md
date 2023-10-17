@@ -23,4 +23,4 @@ Golang Resources
 
 - https://www.mgasch.com/2018/08/k8sevents/
 - https://rimusz.net/kubectl-cli-kubernetes-in-a-nutshell-book (book on kubectl)
-- 
+- https://yourbasic.org/golang/ (go blog by KTH prof)
